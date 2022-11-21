@@ -1,0 +1,84 @@
+@import 'base.css';
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.config {
+    position: relative;
+    left: 7.5vw;
+    top: 10vh;
+    width: 75vw;
+    height: 50vh;
+    background-color: #A6A053;
+    padding: 1%;
+    border-radius: 3%;
+}
+
+.config form {
+    width: 100%;
+    height: calc(100% - 150px);
+    display: block;
+}
+
+.elementos-form {
+    display: flex;
+    width: 75vw;
+    height: auto;
+    vertical-align: top;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.elemento-form select {
+    margin: auto;
+    padding: 10px 35px;
+    background-color: #735C48;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #a8a8a8;
+    transition: box-shadow 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+.elemento-form input {
+    margin: auto;
+    padding: 10px 35px;
+    background-color: #735C48;
+    color: #fff;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #a8a8a8;
+    transition: box-shadow 0.5s;
+    outline: none;
+    cursor: pointer;
+}
+
+.elemento-form {
+    margin: auto;
+    padding: 10px 35px;
+    align-items: center;
+}
+.elementos-form .btn {
+    margin: 50px calc(70px + 1%) 50px auto;
+}
+
+
+@media (max-width: 1080px) {
+    .elementos-form {
+        display: inline-block;
+    }
+
+    .elementos-form .btn {
+        margin: 50px auto;
+    }
+
+    .config form {
+        overflow: hidden;
+        overflow-y: scroll;
+    }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/login.css">
+    <title>Ruling of Dwarfs</title>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><h1><ion-icon name="home"></ion-icon></h1></li>
+            <li><a href="index.html">Ruling of Dwarfs</a></li>
+            <li><a href="partidas.html">Partidas</a></li>
+            <li><a href="reglas.html">Reglas</a></li>
+            <li><a href="config.html">Nueva Partida</a></li>
+            <li class="dropdown">
+              <a class="dropbtn">Menu</a>
+              <div class="dropdown-content">
+                <a href="perfil.html">Perfil</a>
+                <a href="about.html">Sobre nosotros</a>
+                <a href="login.html">Iniciar Sesión</a>
+                <a href="login.html">Registrarse</a>
+              </div>
+            </li>
+          </ul>
+    </nav>
+    
+    <section class="left-section">
+        <div id="left-cover" class="cover cover-hide">
+            <img src="../assets/imgs/cover.png" alt="">
+            <h1>¡ Hola !</h1>
+            <h3>¿ Ya tienes una cuenta ?</h3>
+            <button type="button" class="switch-btn" onclick="location.reload()">Iniciar Sesion</button>
+        </div>
+        <div id="left-form" class="form fade-in-element">
+            <h1>Iniciar Sesion</h1>
+            <form action="" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="Nombre de Usuario">
+                <input type="password" name="user-pass" class="input-box" placeholder="Contraseña">
+                <input type="button" name="login-btn" class="btn" value="Iniciar Sesion">
+            </form>
+        </div>
+    </section>
+
+    <section class="right-section">
+        <div id="right-cover" class="cover fade-in-element">
+            <img src="../assets/imgs/cover.png" alt="">
+            <h1>¡ Hola !</h1>
+            <h3>¿ No tienes una cuenta ?</h3>
+            <button type="button" class="switch-btn" onclick="switchSignup()">Registrarme</button>
+        </div>
+        <div id="right-form" class="form form-hide">
+            <h1>Registrarme</h1>
+            <form action="" method="post">
+                <input type="text" name="user-name" class="input-box" placeholder="Nombre de Usuario">
+                <input type="email" name="user-email" class="input-box" placeholder="Mail">
+                <input type="password" name="user-pass" class="input-box" placeholder="Contraseña">
+                <input type="password" name="user-cpass" class="input-box" placeholder="Confirmar Contraseña">
+                <input type="button" name="signup-btn" class="btn" value="Registrarme">
+            </form>
+        </div>
+    </section>
+
+    <script src="../assets/scripts/login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

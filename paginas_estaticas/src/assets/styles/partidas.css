@@ -1,0 +1,63 @@
+@import 'base.css';
+
+.column-turno {
+  position: relative;
+  float: left;
+  height: 400px;
+  width: 264px;
+  background: url("../imgs/papiro.png");
+  background-position: top left;
+  background-repeat:  no-repeat;
+  background-size: 100%;
+  background-attachment: local;
+  overflow: hidden;
+}
+
+.info-partida {
+  position: relative;
+  padding: 4px;
+  margin: auto;
+  top: 5%;
+  width: 75%;
+  height: 80%;
+  text-align: center;
+}
+
+.row {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.row_second {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.row_inner {
+  transition: 450ms transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 10px 0;
+  padding-bottom: 10px;
+  height: 370px;
+  width: 1066px;
+}
+
+.tile {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  margin-right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 450ms all;
+  transform-origin: center left;
+  display: flex; 
+  flex-flow: wrap;
+  text-align: center;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/config.css">
+    <title>Ruling of Dwarfs</title>
+</head>
+<body>
+  <nav>
+    <ul>
+        <li><h1><ion-icon name="home"></ion-icon></h1></li>
+        <li><a href="../../index.html">Ruling of Dwarfs</a></li>
+        <li><a href="partidas.html">Partidas</a></li>
+        <li><a href = "reglas.html">Reglas</a></li>
+        <li><a href="config.html">Nueva Partida</a></li>
+        <li class="dropdown">
+          <a class="dropbtn">Menu</a>
+          <div class="dropdown-content">
+            <a href="perfil.html">Perfil</a>
+            <a href = "about.html">Sobre nosotros</a>
+            <a href="login.html">Iniciar Sesión</a>
+            <a href="login.html">Registrarse</a>
+          </div>
+        </li>
+      </ul>
+</nav>
+
+  <div class="config">
+
+    <h1>
+      Configuración de Partida
+    </h1>
+    
+    <form>
+      <div class="elementos-form">
+        <div class="elemento-form">
+          <h2>Cantidad de jugadores</h2>
+          <select name="jugadores" id="cars">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+        <div class="elemento-form">
+          <h2>Limite duración turno</h2>
+          <select name="duracion_turno" id="cars">
+            <option value="5">5</option>
+            <option value="10">10</option>
+            <option value="15">15</option>
+            <option value="20">20</option>
+          </select>
+        </div>
+        <div class="elemento-form">
+          <h2>Puntos para ganar</h2>
+          <input type="number" name="puntos_victoria" id="cars" min="8" max="25" value="13">
+        </div>
+      </div>
+      <div class="elementos-form">
+        <input type="submit" class="btn" value="Crear" >
+      </div>
+    </form>
+  </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

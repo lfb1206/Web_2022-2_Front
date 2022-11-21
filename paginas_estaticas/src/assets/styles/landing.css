@@ -1,0 +1,45 @@
+@import 'base.css';
+
+.texto-central {
+    position: relative;
+    top: 30vh;
+    height: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-central h1 {
+    display: inline-block;
+    color: #BFB3A4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 1.125;
+    margin: 0px;
+}
+
+@media (max-width: 340px) {
+    .texto-central {
+        position: relative;
+        top: 5vh;
+        height: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .texto-central h1 {
+        display: inline-block;
+        color: #BFB3A4;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 2rem;
+        font-weight: 600;
+        line-height: 1.125;
+        margin: 0px;
+    }
+}

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/styles/juego.css">
+    <title>Ruling of Dwarfs</title>
+</head>
+<body>
+  <div class="tiempo">
+    05:00
+  </div>
+  <div class="game">
+    <div class="container">
+        <div id='dice1' class="dice dice-one">
+            <div id="dice-one-side-one" class='side one'>
+                <div class="dot one-1"></div>
+            </div>
+            <div id="dice-one-side-two" class='side two'>
+                <div class="dot two-1"></div>
+                <div class="dot two-2"></div>
+            </div>
+            <div id="dice-one-side-three" class='side three'>
+                <div class="dot three-1"></div>
+                <div class="dot three-2"></div>
+                <div class="dot three-3"></div>
+            </div>
+            <div id="dice-one-side-four" class='side four'>
+                <div class="dot four-1"></div>
+                <div class="dot four-2"></div>
+                <div class="dot four-3"></div>
+                <div class="dot four-4"></div>
+            </div>
+            <div id="dice-one-side-five" class='side five'>
+                <div class="dot five-1"></div>
+                <div class="dot five-2"></div>
+                <div class="dot five-3"></div>
+                <div class="dot five-4"></div>
+                <div class="dot five-5"></div>
+            </div>
+            <div id="dice-one-side-six" class='side six'>
+                <div class="dot six-1"></div>
+                <div class="dot six-2"></div>
+                <div class="dot six-3"></div>
+                <div class="dot six-4"></div>
+                <div class="dot six-5"></div>
+                <div class="dot six-6"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id='dice2' class="dice dice-two">
+            <div id="dice-two-side-one" class='side one'>
+                <div class="dot one-1"></div>
+            </div>
+            <div id="dice-two-side-two" class='side two'>
+                <div class="dot two-1"></div>
+                <div class="dot two-2"></div>
+            </div>
+            <div id="dice-two-side-three" class='side three'>
+                <div class="dot three-1"></div>
+                <div class="dot three-2"></div>
+                <div class="dot three-3"></div>
+            </div>
+            <div id="dice-two-side-four" class='side four'>
+                <div class="dot four-1"></div>
+                <div class="dot four-2"></div>
+                <div class="dot four-3"></div>
+                <div class="dot four-4"></div>
+            </div>
+            <div id="dice-two-side-five" class='side five'>
+                <div class="dot five-1"></div>
+                <div class="dot five-2"></div>
+                <div class="dot five-3"></div>
+                <div class="dot five-4"></div>
+                <div class="dot five-5"></div>
+            </div>
+            <div id="dice-two-side-six" class='side six'>
+                <div class="dot six-1"></div>
+                <div class="dot six-2"></div>
+                <div class="dot six-3"></div>
+                <div class="dot six-4"></div>
+                <div class="dot six-5"></div>
+                <div class="dot six-6"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <div id='dice3' class="dice dice-three">
+          <div id="dice-one-side-one" class='side one'>
+              <div class="dot-2 one-1"></div>
+          </div>
+          <div id="dice-one-side-two" class='side two'>
+              <div class="dot-2 two-1"></div>
+              <div class="dot-2 two-2"></div>
+          </div>
+          <div id="dice-one-side-three" class='side three'>
+              <div class="dot-2 three-1"></div>
+              <div class="dot-2 three-2"></div>
+              <div class="dot-2 three-3"></div>
+          </div>
+          <div id="dice-one-side-four" class='side four'>
+              <div class="dot-2 four-1"></div>
+              <div class="dot-2 four-2"></div>
+              <div class="dot-2 four-3"></div>
+              <div class="dot-2 four-4"></div>
+          </div>
+          <div id="dice-one-side-five" class='side five'>
+              <div class="dot-2 five-1"></div>
+              <div class="dot-2 five-2"></div>
+              <div class="dot-2 five-3"></div>
+              <div class="dot-2 five-4"></div>
+              <div class="dot-2 five-5"></div>
+          </div>
+          <div id="dice-one-side-six" class='side six'>
+              <div class="dot-2 six-1"></div>
+              <div class="dot-2 six-2"></div>
+              <div class="dot-2 six-3"></div>
+              <div class="dot-2 six-4"></div>
+              <div class="dot-2 six-5"></div>
+              <div class="dot-2 six-6"></div>
+          </div>
+      </div>
+    </div>
+  <button id='roll' class='roll-button'>Lanzar!</button>
+  </div>
+  <div class="jug1">
+    <h4>Usuario 1</h4>
+    <b>Cartas Materiales: 3</b><p></p>
+    <b>Cartas Desarrollo: 5</b><p></p>
+    <b>Puntos de Victoria: 2</b><p></p>
+    <b>Enanos: 1</b><p></p>
+    <b>Caminos Construidos: 1</b><p></p>
+  </div>
+  <div class="jug2">
+    <h4>Usuario 2</h4>
+    <b>Cartas Materiales: 3</b><p></p>
+    <b>Cartas Desarrollo: 5</b><p></p>
+    <b>Puntos de Victoria: 2</b><p></p>
+    <b>Enanos: 1</b><p></p>
+    <b>Caminos Construidos: 1</b><p></p>
+  </div>
+  <div class="jug3">
+    <h4>Usuario 3</h4>
+    <b>Cartas Materiales: 3</b><p></p>
+    <b>Cartas Desarrollo: 5</b><p></p>
+    <b>Puntos de Victoria: 2</b><p></p>
+    <b>Enanos: 1</b><p></p>
+    <b>Caminos Construidos: 1</b><p></p>
+  </div>
+  <div class="jug4">
+    <h4>Usuario 4</h4>
+    <b>Cartas Materiales: 3</b><p></p>
+    <b>Cartas Desarrollo: 5</b><p></p>
+    <b>Puntos de Victoria: 2</b><p></p>
+    <b>Enanos: 1</b><p></p>
+    <b>Caminos Construidos: 1</b><p></p>
+  </div>
+  <div class="first-row">
+    <div class="hex">
+      <div class="sqr-int-coal">
+      </div>
+      <div class="sup-izq-coal">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-coal">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-coal">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-coal">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        5
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-wood">
+      </div>
+      <div class="sup-izq-wood">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-wood">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-wood">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-wood">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        10
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-iron">
+      </div>
+      <div class="sup-izq-iron">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-iron">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-iron">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-iron">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        8
+      </div>
+    </div>
+  </div>
+  
+  <div class="second-row">
+    <div class="hex">
+      <div class="sqr-int-coal">
+      </div>
+      <div class="sup-izq-coal">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-coal">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-coal">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-coal">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        2
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-iron">
+      </div>
+      <div class="sup-izq-iron">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-iron">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-iron">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-iron">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        9
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-copper">
+      </div>
+      <div class="sup-izq-copper">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-copper">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-copper">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-copper">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        3
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-rock">
+      </div>
+      <div class="sup-izq-rock">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-rock">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-rock">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-rock">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        4
+      </div>
+    </div>
+  </div>
+  
+  <div class="third-row">
+    <div class="hex">
+      <div class="sqr-int-rock">
+      </div>
+      <div class="sup-izq-rock">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-rock">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-rock">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-rock">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        6
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-rock">
+      </div>
+      <div class="sup-izq-rock">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-rock">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-rock">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-rock">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        4
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-artic">
+      </div>
+      <div class="sup-izq-artic">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-artic">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-artic">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-artic">
+        <div class="line2"></div>
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-wood">
+      </div>
+      <div class="sup-izq-wood">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-wood">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-wood">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-wood">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        6
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-coal">
+      </div>
+      <div class="sup-izq-coal">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-coal">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-coal">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-coal">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        11
+      </div>
+    </div>
+  </div>
+  
+  <div class="fourth-row">
+    <div class="hex">
+      <div class="sqr-int-copper"></div>
+      <div class="sup-izq-copper">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-copper">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-copper">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-copper">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        3
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-iron">
+      </div>
+      <div class="sup-izq-iron">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-iron">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-iron">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-iron">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        4
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-coal">
+      </div>
+      <div class="sup-izq-coal">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-coal">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-coal">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-coal">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        5
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-wood">
+      </div>
+      <div class="sup-izq-wood">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-wood">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-wood">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-wood">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        12
+      </div>
+    </div>
+  </div>
+  
+  <div class="fifth-row">
+    <div class="hex">
+      <div class="sqr-int-rock">
+      </div>
+      <div class="sup-izq-rock">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-rock">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-rock">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-rock">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        8
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-wood">
+      </div>
+      <div class="sup-izq-wood">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-wood">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-wood">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-wood">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        10
+      </div>
+    </div>
+    <div class="hex">
+      <div class="sqr-int-copper">
+      </div>
+      <div class="sup-izq-copper">
+        <div class="line2"></div>
+      </div>
+      <div class="sup-der-copper">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-izq-copper">
+        <div class="line1"></div>
+      </div>
+      <div class="inf-der-copper">
+        <div class="line2"></div>
+      </div>
+      <div class="num">
+        9
+      </div>
+    </div>
+  </div>
+  <div class="materiales">
+    <div class="top">
+      <div class="material">
+        <div class="img">
+          <img src="../assets/imgs/madera.png" class="cover">
+        </div>
+        <div class="cantidad">
+          <p>10</p>
+        </div>
+      </div>
+      <div class="material">
+        <div class="img">
+          <img src="../assets/imgs/carbon.png" class="cover">
+        </div>
+        <div class="cantidad">
+          <p>4</p>
+        </div>
+      </div>
+      <div class="material">
+        <div class="img">
+          <img src="../assets/imgs/cobre.png" class="cover">
+        </div>
+        <div class="cantidad">
+          <p>6</p>
+        </div>
+      </div>
+      <div class="material">
+        <div class="img">
+          <img src="../assets/imgs/gold.png" class="cover">
+        </div>
+        <div class="cantidad">
+          <p>9</p>
+        </div>
+      </div>
+    </div>
+    <div class="bottom">
+      <div class="material">
+        <div class="img">
+          <img src="../assets/imgs/cartas.png" class="cover">
+        </div>
+        <div class="cantidad">
+          <p>1</p>
+        </div>
+      </div>
+      <div class="material">
+        <div class="img">
+          <img src="../assets/imgs/hierro.png" class="cover">
+        </div>
+        <div class="cantidad">
+          <p>5</p>
+        </div>
+      </div>
+      <div class="material">
+        <div class="img">
+          <img src="../assets/imgs/piedra.png" class="cover">
+        </div>
+        <div class="cantidad">
+          <p>7</p>
+        </div>
+      </div>
+      <div class="material">
+        <div class="img">
+          <img src="../assets/imgs/diamante.png" class="cover">
+        </div>
+        <div class="cantidad">
+
+          <p>5</p>
+        </div>
+      </div>
+      <div class="material">
+        <div class="img">
+          <img src="../assets/imgs/ruby.png" class="cover">
+        </div>
+        <div class="cantidad">
+
+          <p>3</p>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+  <div class="cont-saqueadores">
+    <div class="cont-iconos">
+      <img src="../assets/imgs/fuerza.png" class="cont-icono">
+      <h3> : </h3>
+      <ion-icon name="shield-outline" size="large" class="cont-icono"></ion-icon>
+    </div>
+    <div class="cont-iconos">
+      <h4> 4 : 3 </h4>
+    </div>
+    <div class="cont-iconos">
+      <img src="../assets/imgs/cascobarbaro.png" class="cont-icono">
+      <ion-icon name="arrow-forward-sharp" size="large"></ion-icon>
+      <img src="../assets/imgs/hex.png" class="cont-icono">
+    </div>
+    <div class="cont-iconos">
+      <h4> 5 </h4>
+    </div>
+  </div>
+  <div class="cont-acciones">
+    <details>
+      <summary>
+        Realizar Trueque
+      </summary>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+    </details>
+    <details>  
+      <summary>
+        Construir
+      </summary>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+    </details>
+    <details>  
+      <summary>
+        Mejorar
+      </summary>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+    </details>
+    <details>  
+      <summary>
+        Acciones enanos
+      </summary>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+    </details>
+    <details>  
+      <summary>
+        Opciones Cartas de Desarrollo
+      </summary>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+      <b><button class="btn" value="Iniciar Sesion">Unirse</button></b>
+    </details>
+    <a class="btn salir" href="../../index.html">Salir</a>
+  </div>
+  <script src="../assets/scripts/dados.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
